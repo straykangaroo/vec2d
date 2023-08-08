@@ -80,4 +80,4 @@ Distributed under the MIT License. See LICENSE.txt for more information.
 
 ## Contact
 
-[https://github.com/stray-kan/argolis](https://github.com/stray-kan/vec2d)
+[https://github.com/stray-kan/vec2d](https://github.com/stray-kan/vec2d)
