@@ -20,11 +20,14 @@
     - what is missing:
         - equality/inequality operations are notoriously tricky to implement with floating point values.
         If you need them, just implement them as free functions operator overloads using a technique that suits your needs:
+
         bool operator==(const vec2 & v1, const vec2 & v2) {
             // your code here
         }
+        
         bool operator!=(const vec2 & v1, const vec2 & v2) { return ! (v1 == v2); }
         - relational operators (<,<=,>,>=) do not really have a widely accepted meaning for 2d vectors
+
 */
 class vec2 {
 
