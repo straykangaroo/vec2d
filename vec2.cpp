@@ -69,10 +69,10 @@ vec2 & vec2::operator/=(float a)
 
 vec2 & vec2::operator<<=(float angle)
 {
-	const auto cos = std::cos(angle);
-	const auto sin = std::sin(angle);
-	float new_x = _x * cos - _y * sin;
-	float new_y = _x * sin + _y * cos;
+    const auto cos = std::cos(angle);
+    const auto sin = std::sin(angle);
+    float new_x = _x * cos - _y * sin;
+    float new_y = _x * sin + _y * cos;
     _x = new_x;
     _y = new_y;
     return *this;
