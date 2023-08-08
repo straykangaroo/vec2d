@@ -2,7 +2,7 @@
 2D euclidean vector class using float values
 
 ## features
-- ###dual cartesian / polar representation
+- ### dual cartesian / polar representation
 ```
         vec2 v1{4.21f,7.5f};
         float x = v1.x();
@@ -13,42 +13,42 @@
         const float pi = 3.14159274101257324219;
         vec2 v2 = vec2::from_polar(0,pi/6.0f);
 ```
-- ###vector sum and difference
+- ### vector sum and difference
 ```
         vec2 v1{3,4};
         vec2 v2{5,6};
         vec3 v3{1,1};
         vec2 v4 = v1 + v2 - v3;         // v4 is (7,9)
 ```
-- ###multiplication and division by a scalar
+- ### multiplication and division by a scalar
 ```
         vec2 v1{4,10};
         vec2 v2 = 1 * 3.0f;             // v2 is (12,30)
         v2 /= 2.0 f;                    // v2 is now (6,15)  
 ```
-- ###rotation
+- ### rotation
 ```
         const float pi = 3.14159274101257324219;
         vec2 v1{1,1};
         vec2 v2 = v1 << (pi/2.0f);      // counter-clockwise rotation: v2 is (-1,1)
         vec2 v3 = v1 >> (pi/2.0f);      // clockwise rotation: v3 is (1,-1)
 ```
-- ###opposite vector
+- ### opposite vector
 ```
         vec2 v = - vec2{4,-8}           // v is (-4,8)
 ```
-- ###normalization
+- ### normalization
 ```
         vec2 v{-12,0};
         v.normalize();                  // v is now (-1,0)
 ```
-- ###scalar product (aka dot product)
+- ### scalar product (aka dot product)
 ```
         vec2 v1{4,6};
         vec2 v2{2.5,7};
         float p = v1 * v2;              // p is 52.0 
 ```
-- ###extraction to std::ostream
+- ### extraction to std::ostream
 ```
         #include <iostream>
 
@@ -80,4 +80,4 @@ Distributed under the MIT License. See LICENSE.txt for more information.
 
 ## Contact
 
-[https://github.com/stray-kan/argolis](https://github.com/stray-kan/argolis)
+[https://github.com/stray-kan/argolis](https://github.com/stray-kan/vec2d)
