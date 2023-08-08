@@ -38,27 +38,27 @@ public:
 	// @return	a vec2 built from polar coordinates
     static vec2 from_polar(float angle, float magnitude);
 
-	// @return	x component
+    // @return	x component
     float x() const;
-	// @return	y component
+    // @return	y component
     float y() const;
 
     // @return  this vector's angle in radians [-pi,pi]
     // @note    if x() == 0.0f && y() == 0.0f will return 0.0f
     float angle() const;
-	// @return	magnitude
+    // @return	magnitude
     float magnitude() const;
 
 	// vector sum: add other to this vector
 	// @return	this vector
     vec2 & operator+=(const vec2 & other);
 
-	// vector difference: subtract other from this vector
-	// @return	this vector
+    // vector difference: subtract other from this vector
+    // @return	this vector
     vec2 & operator-=(const vec2 & other);
 
-	// scalar multiplication: multiply this vector by a scalar
-	// @return	this vector
+    // scalar multiplication: multiply this vector by a scalar
+    // @return	this vector
     vec2 & operator*=(float a);
 
     // scalar division: divide this vector by a scalar (same as multiplying by 1/a)
@@ -74,7 +74,7 @@ public:
     vec2 & operator>>=(float angle);
 
     // opposite vector
-	// @return	the opposite vector
+    // @return	the opposite vector
     vec2 operator-() const;
 
     // normalize this vector
