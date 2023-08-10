@@ -60,15 +60,15 @@ std::cout << v;                 // output: (0,0)
 - equality / inequality operations are notoriously tricky to get right when dealing with floating point values.
 If you need them, just implement them as free function operator overloads using a technique that suits your needs:
 ```c++
-    bool operator==(const vec2 & v1, const vec2 & v2)
-    {
-        // your code here
-    }
+bool operator==(const vec2 & v1, const vec2 & v2)
+{
+    // your code here
+}
 
-    bool operator!=(const vec2 & v1, const vec2 & v2)
-    {
-        return ! (v1 == v2);
-    }
+bool operator!=(const vec2 & v1, const vec2 & v2)
+{
+    return ! (v1 == v2);
+}
 ```
 - relational operators (`<`,`<=`,`>`,`>=`) as they do not really have a widely accepted meaning for 2d vectors. If you need them, just implement them as free function operator overloads.
 
