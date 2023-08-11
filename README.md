@@ -35,7 +35,7 @@ vec2 v3 = v1 >> (pi/2.0f);      // clockwise rotation: v3 is (1,-1)
 ```
 - ### opposite vector
 ```c++
-    vec2 v = - vec2{4,-8}           // v is (-4,8)
+vec2 v = - vec2{4,-8}           // v is (-4,8)
 ```
 - ### normalization
 ```c++
